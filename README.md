@@ -25,33 +25,28 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
+- Step 1. Setup Resources in Azure
+- Step 2. Ensure Connectivity between the client and Domain Controller
+- Step 3. 
 - Step 4
 
 <h2>Actions and Observations</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<img width="1535" alt="Screen Shot 2024-05-19 at 6 30 45 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/b7f16b5a-b641-4380-86ea-1c1eb575b0b3">
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+Step 1. In Azure, Setup a Resource Groups 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<img width="1529" alt="Screen Shot 2024-05-19 at 6 31 35 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/6715bfb6-69ba-43d7-89c8-fc8cfed22568">
+<img width="1537" alt="Screen Shot 2024-05-19 at 6 34 21 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/74624ef3-bd75-46f2-8b7c-90959259fdff">
+<img width="1536" alt="Screen Shot 2024-05-19 at 6 42 32 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/c36358e7-d71b-41cf-9f43-755b54534ed4">
+
+
+Step 2. Create 2 Virtual Machines 
+ - Create a Windows 10 Virtual Machine (VM)
+ - While creating the VM, select the previously created Resource Group
+ - While creating the VM, create a new Virtual Network (Vnet) 
+ - Create a Linux (Ubuntu) Virtual Machine (VM)
+ - While create the VM, select the previously created Resource Group and Vnet
+ - Observe Your Virtual Network within Network Watcher
+
+Note: Wait for the first VM to finish Deploying before creating the second VM. If not, the Vnet you created on the first VM wont show up when creating the second VM.
