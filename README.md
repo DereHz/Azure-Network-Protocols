@@ -37,6 +37,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 Step 1. In Azure, Setup a Resource Groups 
 
 <img width="1529" alt="Screen Shot 2024-05-19 at 6 31 35 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/6715bfb6-69ba-43d7-89c8-fc8cfed22568">
+<img width="1536" alt="Screen Shot 2024-05-19 at 6 33 39 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/a21c9777-4d51-4c55-8362-602217c7733f">
 <img width="1537" alt="Screen Shot 2024-05-19 at 6 34 21 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/74624ef3-bd75-46f2-8b7c-90959259fdff">
 <img width="1536" alt="Screen Shot 2024-05-19 at 6 42 32 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/c36358e7-d71b-41cf-9f43-755b54534ed4">
 
@@ -50,3 +51,36 @@ Step 2. Create 2 Virtual Machines
  - Observe Your Virtual Network within Network Watcher
 
 Note: Wait for the first VM to finish Deploying before creating the second VM. If not, the Vnet you created on the first VM wont show up when creating the second VM.
+
+<img width="2306" alt="Screen Shot 2024-05-19 at 6 47 30 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/2d16cdc1-f2c4-416e-a7de-cabd1f1e8424">
+
+Step 3. Open Microsoft Remote Desktop (If on Mac)
+ - Click Add PC
+ - for PC name, use VM-1's Public IP Address
+ - Open the VM on the Microsoft Remote Desktop after adding the PC
+
+
+
+Part 4. Install Software Within Windows 10 VM
+ - Install and Open WireShark
+ - Open PowerShell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
