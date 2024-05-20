@@ -23,13 +23,6 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Windows 10 (21H2)
 - Ubuntu Server 20.04
 
-<h2>High-Level Steps</h2>
-
-- Step 1. Setup Resources in Azure
-- Step 2. Ensure Connectivity between the client and Domain Controller
-- Step 3. 
-- Step 4
-
 <h2>Actions and Observations</h2>
 
 <img width="1535" alt="Screen Shot 2024-05-19 at 6 30 45 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/b7f16b5a-b641-4380-86ea-1c1eb575b0b3">
@@ -96,8 +89,32 @@ Part 5. Initiate a perpetual/non-stop ping from your Windows 10 VM-1 to your Ubu
 
  Part 6. Back in Wireshark, filter for SSH traffic only
   - From your Windows 10 VM-1, “SSH" into your Ubuntu Virtual Machine (via its private IP address)
-  - Type commands (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark
   - Exit the SSH connection by typing ‘exit’ and pressing [Enter]
+
+
+<img width="1351" alt="Screen Shot 2024-05-20 at 3 43 46 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/54867d2b-b649-4041-b61a-9b7ea3f0144e">
+
+Part 7. Filter for DHCP traffic only 
+ - From your Windows 10 VM, attempt to issue your VM a new IP address from the command line (ipconfig /renew)
+ - Observe the DHCP traffic appearing in WireShark
+
+
+<img width="1350" alt="Screen Shot 2024-05-20 at 3 50 03 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/11d2db84-2d77-4c8a-b5d4-864ae2424481">
+<img width="1351" alt="Screen Shot 2024-05-20 at 3 52 02 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/bfd3e7e5-2400-4964-a998-efc35c2b645a">
+
+
+Part 8. Filter for DNS traffic only 
+ - From your Windows 10 VM within a command line, use nslookup to see what google.com and disney.com’s IP addresses are
+ - Observe the DNS traffic being show in WireShark
+
+
+
+
+
+
+
+
+
 
 
 
