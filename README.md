@@ -68,8 +68,72 @@ Part 4. Install Software Within Windows 10 VM
 <img width="2545" alt="Screen Shot 2024-05-20 at 3 01 21 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/efa8b0ca-c3af-428a-9db5-cea35dd4e69e">
 <img width="1351" alt="Screen Shot 2024-05-20 at 3 03 47 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/d02e482d-d96b-4e8b-9be1-93a305a8e683">
 
- - Retrieve the private IP address of the Ubuntu VM and attempt to ping it from within the Windows 10 VM
+ - Retrieve the private IP address of the Ubuntu VM-2 and attempt to ping it from within the Windows 10 VM
  - Observe ping request and replies within wireshark
+
+<img width="1344" alt="Screen Shot 2024-05-20 at 3 13 03 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/610d0a79-8ea8-46a2-8c98-b63cc3e930f9">
+
+
+
+Part 5. Initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM-2
+ - On PowerShell, type in the private IP again along with a nonspot pin "-t"
+ - Observe the ICMP traffic in WireShark and the command line Ping activity
+
+<img width="1520" alt="Screen Shot 2024-05-20 at 3 16 02 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/0ac0d1f3-366c-4c82-8284-ab5c7d7911df">
+
+ - Open the Network Security Group your Ubuntu VM-2 is using and disable incoming (inbound) ICMP traffic
+ - Network Security group -> VM-2-nsg -? Inbound security rules -> Add
+ - Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity after adding a new rule
+
+<img width="1350" alt="Screen Shot 2024-05-20 at 3 19 26 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/e1a71e54-efe2-4efb-a6d5-039f32ef5349">
+ - "Request timed out"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
