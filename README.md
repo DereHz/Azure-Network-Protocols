@@ -56,7 +56,8 @@ Step 3. Open Microsoft Remote Desktop (If on Mac)
 
 Part 4. Install Software Within Windows 10 VM-1
  - Install WireShark
- - Open Wireshark and filter for ICMP traffic only by hitting the blue sharl icon and typing in "ICMP"
+ - 
+ - Open Wireshark filter for ICMP traffic only by hitting the blue shark icon and typing in "ICMP"
 
 <img width="2545" alt="Screen Shot 2024-05-20 at 3 01 21 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/efa8b0ca-c3af-428a-9db5-cea35dd4e69e">
 <img width="1351" alt="Screen Shot 2024-05-20 at 3 03 47 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/d02e482d-d96b-4e8b-9be1-93a305a8e683">
