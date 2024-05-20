@@ -59,11 +59,19 @@ Step 3. Open Microsoft Remote Desktop (If on Mac)
  - for PC name, use VM-1's Public IP Address
  - Open the VM on the Microsoft Remote Desktop after adding the PC
 
-
+<img width="1376" alt="Screen Shot 2024-05-20 at 2 57 55 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/8f7d99bb-15b9-4e52-bbca-500cee05319e">
 
 Part 4. Install Software Within Windows 10 VM
- - Install and Open WireShark
- - Open PowerShell
+ - Install WireShark
+ - Open Wireshark and filter for ICMP traffic only by hitting the blue sharl icon and typing in "ICMP"
+
+<img width="2545" alt="Screen Shot 2024-05-20 at 3 01 21 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/efa8b0ca-c3af-428a-9db5-cea35dd4e69e">
+<img width="1351" alt="Screen Shot 2024-05-20 at 3 03 47 PM" src="https://github.com/DereHz/azure-network-protocols/assets/169094076/d02e482d-d96b-4e8b-9be1-93a305a8e683">
+
+ - Retrieve the private IP address of the Ubuntu VM and attempt to ping it from within the Windows 10 VM
+ - Observe ping request and replies within wireshark
+
+
 
 
 
